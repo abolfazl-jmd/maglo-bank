@@ -28,6 +28,12 @@ module.exports = {
       successColor: "var(--green-success-color)",
       errorColor: "var(--red-error-color)",
     },
+    screens: {
+      xl: { max: "1300px" },
+      lg: { max: "1200px" },
+      md: { max: "880px" },
+      sm: { max: "600px" },
+    },
   },
   plugins: [],
 };
