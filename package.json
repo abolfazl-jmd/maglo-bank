@@ -6,6 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
     "lint": "next lint",
     "tailwind:dev": "postcss ./styles/globals.css -o ./styles/build.css --watch ",
     "tailwind:prod": "cross-env NODE_ENV=production postcss ./styles/globals.css -o ./styles/build.css --minify  "
@@ -18,14 +20,18 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@testing-library/react": "^13.4.0",
     "@types/node": "18.8.3",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
+    "@vitejs/plugin-react": "^2.1.0",
     "autoprefixer": "^10.4.12",
     "eslint": "8.24.0",
     "eslint-config-next": "12.3.1",
+    "jsdom": "^20.0.1",
     "postcss-cli": "^10.0.0",
     "tailwindcss": "^3.1.8",
-    "typescript": "4.8.4"
+    "typescript": "4.8.4",
+    "vitest": "^0.24.1"
   }
 }
