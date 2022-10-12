@@ -7,6 +7,7 @@ const Home: NextPage = () => {
       <h1 className="text-2xl text-slate-900 dark:text-textBlack font-gortida">
         Hello Maglo.
       </h1>
+      <button data-testid="submit-button">Submit</button>
     </div>
   );
 };
